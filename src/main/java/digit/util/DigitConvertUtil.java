@@ -41,7 +41,7 @@ public class DigitConvertUtil {
                 dataList.add(letterArr);
             }
         }
-        //递归->多数组排列组合
+        //递归算法返回多数组排列组合
         List<String[]> resultList= convertLetters(dataList,0,null);
         System.out.print("Output:");
         //打印组合结果
@@ -69,9 +69,11 @@ public class DigitConvertUtil {
             String[] dataArr=dataList.get(index);
             for(String[] dataArr0: resultList){
                 for(String s : dataArr){
+                    //复制数组并扩充新元素
                     String[] dataArrCopy=new String[dataArr0.length+1];
                     System.arraycopy(dataArr0, 0, dataArrCopy, 0, dataArr0.length);
                     dataArrCopy[dataArrCopy.length-1]=s;
+                    //加入结果集中
                     resultList0.add(dataArrCopy);
                 }
             }
