@@ -7,7 +7,7 @@ import java.util.*;
  * @ Date       ：Created in 16:17 2020/12/7
  * @ Description：数字键盘转换并自由组合工具类
  * @ Modified By：
- * @Version: $version$
+ * @Version: 0.0.1
  */
 public class DigitConvertUtil {
 
