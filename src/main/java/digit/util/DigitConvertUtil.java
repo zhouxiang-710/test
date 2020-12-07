@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * @ Author     ：zhouxiang.
  * @ Date       ：Created in 16:17 2020/12/7
- * @ Description：${description}
+ * @ Description：数字键盘转换并自由组合工具类
  * @ Modified By：
  * @Version: $version$
  */
@@ -26,6 +26,9 @@ public class DigitConvertUtil {
         digitMap.put("9",Arrays.asList("W","X","Y","Z"));
     }
 
+    /*
+     * 功能描述: 输入数字，转换成字符并自由组合
+     */
     public static void digitToLetters(int digit){
         initDigitsMap();
         if(digit<0||digit>99){
